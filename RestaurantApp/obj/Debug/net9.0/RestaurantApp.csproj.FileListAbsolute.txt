@@ -286,3 +286,4 @@ D:\ITI\mvc\RestaurantApp\RestaurantApp\obj\Debug\net9.0\RestaurantApp.pdb
 D:\ITI\mvc\RestaurantApp\RestaurantApp\obj\Debug\net9.0\RestaurantApp.genruntimeconfig.cache
 D:\ITI\mvc\RestaurantApp\RestaurantApp\obj\Debug\net9.0\ref\RestaurantApp.dll
 D:\ITI\mvc\RestaurantApp\RestaurantApp\bin\Debug\net9.0\SixLabors.ImageSharp.dll
+D:\ITI\mvc\RestaurantApp\RestaurantApp\obj\Debug\net9.0\RestaurantApp.sourcelink.json

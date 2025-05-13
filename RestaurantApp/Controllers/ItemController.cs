@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantApp.Data;
 using RestaurantApp.Models;
+using RestaurantApp.Repositories;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Processing;
@@ -9,25 +10,28 @@ namespace RestaurantApp.Controllers
 {
     public class ItemController : Controller
     {
-        RestaurantDbContext context;
+        // RestaurantDbContext context;
+        IItemRepository ItemRepo;
         IWebHostEnvironment webHostEnvironment;
-        public ItemController(RestaurantDbContext _context, IWebHostEnvironment _webHostEnvironment)
+        ICategoryRepository CateRepo;
+        public ItemController(IItemRepository _Repo, IWebHostEnvironment _webHostEnvironment,ICategoryRepository _CatRepo)
         {
-        this.context = _context;
+        this.ItemRepo = _Repo;
         this.webHostEnvironment = _webHostEnvironment;
+            this.CateRepo = _CatRepo;
         }
         public IActionResult Index()
         {
-           var categories= context.Categories.ToList();
+           var categories= CateRepo.GetAll();
             ViewBag.categories = categories;
-            var items=context.Items.ToList();
+            var items = ItemRepo.GetItems();
 
             return View(items);
         }
 
         public IActionResult create()
         {
-            ViewBag.categories = context.Categories.ToList();
+            ViewBag.categories = CateRepo.GetAll();
             return View();
         }
         [HttpPost]
@@ -76,14 +80,13 @@ namespace RestaurantApp.Controllers
                 IsAvailable = model.IsAvailable,
                 Ingredients = model.Ingredients,
             };
-            context.Items.Add(item);
-           await context.SaveChangesAsync();
+            ItemRepo.Add(item);
             return RedirectToAction("index");
         }
 
         public IActionResult Edit(int id)
         {
-            var item = context.Items.Find(id);
+            var item = ItemRepo.getById(id);
             if (item == null) 
                 return NotFound();
             var model = new ItemViewModel()
@@ -98,7 +101,7 @@ namespace RestaurantApp.Controllers
                 CategoryId = item.CategoryId,
                 ExistingImagePath = item.ImagePath,
             };
-            var categories = context.Categories.ToList();
+            var categories = CateRepo.GetAll();
             ViewBag.categories = categories;
             return View(model);
         }
@@ -109,7 +112,7 @@ namespace RestaurantApp.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.categories = context.Categories.ToList();
+                ViewBag.categories = CateRepo.GetAll();
                 return View(model);
             }
             string imagePath = model.ExistingImagePath;
@@ -147,7 +150,7 @@ namespace RestaurantApp.Controllers
                     }
                 }
             }
-            var item =await context.Items.FindAsync(model.Id);
+            var item =ItemRepo.getById(model.Id);
             item.Name = model.Name;
             item.Description = model.Description;
             item.Price = model.Price;
@@ -157,7 +160,7 @@ namespace RestaurantApp.Controllers
             item.IsAvailable = model.IsAvailable;
             item.Ingredients = model.Ingredients;
 
-            await context.SaveChangesAsync();
+            ItemRepo.Update(item);
 
             return RedirectToAction("index");
         } 
@@ -165,9 +168,8 @@ namespace RestaurantApp.Controllers
         {
             if (id == null)
                 return BadRequest();
-            var model = context.Items.Find(id);
-            context.Items.Remove(model);
-            context.SaveChanges();
+            var model = ItemRepo.getById(id.Value);
+             ItemRepo.Delete(model);
             return RedirectToAction("index");
         }
     }

@@ -3,22 +3,24 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestaurantApp.Data;
 using RestaurantApp.Models;
+using RestaurantApp.Repositories;
 
 namespace RestaurantApp.Controllers
 {
     public class CategoryController : Controller
     {
-        RestaurantDbContext context;
+        //RestaurantDbContext context;
+        ICategoryRepository Repo;
         private  IWebHostEnvironment webHostEnvironment;
-        public CategoryController(RestaurantDbContext _context , IWebHostEnvironment _webHostEnvironment) {
-        this.context = _context;
+        public CategoryController(ICategoryRepository _Repo, IWebHostEnvironment _webHostEnvironment) {
+        this.Repo = _Repo;
         this.webHostEnvironment = _webHostEnvironment;
             
         }
 
         public IActionResult Index()
         {
-           var model= context.Categories.ToList();
+           var model= Repo.GetAll();
             return View(model);
         }
 
@@ -53,15 +55,14 @@ namespace RestaurantApp.Controllers
                 Description = model.Description,
                 ImagePath = imagePath
             };
-            context.Categories.Add(category);
-           await context.SaveChangesAsync();
+                  Repo.Add(category);
 
                 return RedirectToAction("index");
         }
 
         public IActionResult Edit(int id)
         {
-           var category= context.Categories.Include(i=>i.Items).FirstOrDefault(i=>i.Id==id);
+           var category= Repo.GetById(id);
             CategoryViewModel model = new CategoryViewModel()
             {
                 Id = category.Id,
@@ -77,7 +78,7 @@ namespace RestaurantApp.Controllers
         {
             if (!ModelState.IsValid) 
                 return View(model);
-            var category = context.Categories.Find(model.Id);
+            var category = Repo.GetById(model.Id);
             if (category == null)
                 return NotFound();
             category.Name = model.Name;
@@ -102,14 +103,13 @@ namespace RestaurantApp.Controllers
 
                 category.ImagePath = "/images/categories/" + uniqueFileName;
             }
-            context.Categories.Update(category);
-            await context.SaveChangesAsync();
+            Repo.Update(category);
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> delete(int id)
+        public  IActionResult delete(int id)
         {
-            var category = context.Categories.Find(id);
+            var category = Repo.GetById(id);
             if (category == null)
                 return NotFound();
             if (!string.IsNullOrEmpty(category.ImagePath))
@@ -120,8 +120,7 @@ namespace RestaurantApp.Controllers
                     System.IO.File.Delete(imagePath);
                 }
             }
-            context.Categories.Remove(category);
-           await context.SaveChangesAsync();
+            Repo.Delete(category);
             return RedirectToAction("index");
         }
     }

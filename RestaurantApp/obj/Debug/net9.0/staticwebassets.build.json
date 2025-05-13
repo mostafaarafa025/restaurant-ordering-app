@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FMkbA7Z4rYHGpXwqYdErjjUSkLQu9f1tH8e1O4w8TM4=",
+  "Hash": "pTjHfD6gUPeAyrm2E4Aci5Z8jEvhjZf137jb2ENEhwo=",
   "Source": "RestaurantApp",
   "BasePath": "_content/RestaurantApp",
   "Mode": "Default",
@@ -4173,6 +4173,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\categories\\9dd26286-9309-41e5-9ae0-679d3c4391f0_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg"
+    },
+    {
+      "Identity": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg",
+      "SourceId": "RestaurantApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\",
+      "BasePath": "_content/RestaurantApp",
+      "RelativePath": "images/categories/a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yjltl768dv",
+      "Integrity": "XiMfWCiqTBY8pt/gSijBFztR5NCDiZnz29O5NdJLen0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg"
     },
     {
       "Identity": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\d7ad8e4e-e89a-4a72-aba6-ac78f42c95f9_chad-montano-MqT0asuoIcU-unsplash.jpg",
@@ -15422,6 +15443,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-MxyB6Qn0PGaU5KDhO+W7RE1iNopfy30NIN3j7k2LxMw="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg",
+      "AssetFile": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6788527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XiMfWCiqTBY8pt/gSijBFztR5NCDiZnz29O5NdJLen0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:44:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XiMfWCiqTBY8pt/gSijBFztR5NCDiZnz29O5NdJLen0="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.yjltl768dv.jpg",
+      "AssetFile": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6788527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XiMfWCiqTBY8pt/gSijBFztR5NCDiZnz29O5NdJLen0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:44:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yjltl768dv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XiMfWCiqTBY8pt/gSijBFztR5NCDiZnz29O5NdJLen0="
         }
       ]
     },

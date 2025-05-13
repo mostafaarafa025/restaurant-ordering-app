@@ -1,7 +1,0 @@
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\26c7f7a8-d559-4945-80c5-16c3f5741307_Screenshot 2025-04-30 123359.png
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\63b7cf19-cc5d-48fc-b49c-ba239a21cd5f_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\66027e66-fd92-453b-aff9-85e160ceb1a4_chad-montano-MqT0asuoIcU-unsplash.jpg
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\bf43d0a7-1992-4242-afa1-0b13537300b4_ben-lei-flFd8L7_B3g-unsplash.jpg
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\cb50fc83-5212-4295-8103-aebc32f19cbb_lana-mattice-gKrxflp1wv0-unsplash.jpg
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\e6245134-bcd1-4e35-b374-6ad17d66d38e_eiliv-aceron-uBigm8w_MpA-unsplash.jpg
-D:\ITI\mvc\RestaurantApp\RestaurantApp\wwwroot\images\categories\e9b44ee3-1b62-42a4-b3cd-39c6d4174352_taylor-kiser-EvoIiaIVRzU-unsplash.jpg

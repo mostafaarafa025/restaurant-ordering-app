@@ -67,6 +67,7 @@ wwwroot\images\categories\27ff1ae2-de04-41af-848e-3fe34a3ce855_melissa-walker-ho
 wwwroot\images\categories\66dd86cd-2432-43eb-9491-75e4cb965026_eiliv-aceron-uBigm8w_MpA-unsplash.jpg
 wwwroot\images\categories\6b33d84f-82bc-4952-91aa-aca5a9b2fa81_taylor-kiser-EvoIiaIVRzU-unsplash.jpg
 wwwroot\images\categories\9dd26286-9309-41e5-9ae0-679d3c4391f0_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg
+wwwroot\images\categories\a71f4068-5886-4aa8-9029-bf9018079f43_conor-brown-sqkXyyj4WdE-unsplash.jpg
 wwwroot\images\categories\d7ad8e4e-e89a-4a72-aba6-ac78f42c95f9_chad-montano-MqT0asuoIcU-unsplash.jpg
 wwwroot\images\categories\e001d4c8-1b98-4c2a-b9f5-685e1200eb99_ben-lei-flFd8L7_B3g-unsplash.jpg
 wwwroot\images\items\05c9fb31-e9d0-44a0-8dbf-50c0c07c6d12_jordon-kaplan-tVQwwfyE5Lc-unsplash.jpg
