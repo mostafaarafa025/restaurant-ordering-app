@@ -1,0 +1,369 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\RestaurantApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RestaurantApp.yud8yziwsj.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\0d3a9aaa-f2a7-47e7-8e41-057d42f6638d_lana-mattice-gKrxflp1wv0-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\0d3a9aaa-f2a7-47e7-8e41-057d42f6638d_lana-mattice-gKrxflp1wv0-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\27ff1ae2-de04-41af-848e-3fe34a3ce855_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\27ff1ae2-de04-41af-848e-3fe34a3ce855_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\66dd86cd-2432-43eb-9491-75e4cb965026_eiliv-aceron-uBigm8w_MpA-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\66dd86cd-2432-43eb-9491-75e4cb965026_eiliv-aceron-uBigm8w_MpA-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\6b33d84f-82bc-4952-91aa-aca5a9b2fa81_taylor-kiser-EvoIiaIVRzU-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\6b33d84f-82bc-4952-91aa-aca5a9b2fa81_taylor-kiser-EvoIiaIVRzU-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\9dd26286-9309-41e5-9ae0-679d3c4391f0_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\9dd26286-9309-41e5-9ae0-679d3c4391f0_melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\d7ad8e4e-e89a-4a72-aba6-ac78f42c95f9_chad-montano-MqT0asuoIcU-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\d7ad8e4e-e89a-4a72-aba6-ac78f42c95f9_chad-montano-MqT0asuoIcU-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\categories\\e001d4c8-1b98-4c2a-b9f5-685e1200eb99_ben-lei-flFd8L7_B3g-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\e001d4c8-1b98-4c2a-b9f5-685e1200eb99_ben-lei-flFd8L7_B3g-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\05c9fb31-e9d0-44a0-8dbf-50c0c07c6d12_jordon-kaplan-tVQwwfyE5Lc-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\05c9fb31-e9d0-44a0-8dbf-50c0c07c6d12_jordon-kaplan-tVQwwfyE5Lc-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\12cd4bee-34b2-4132-a69a-275127f06e64_andres-vera-BewKTZMv7V0-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\12cd4bee-34b2-4132-a69a-275127f06e64_andres-vera-BewKTZMv7V0-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\1a8a139d-5029-4da9-b645-7bf660657acc_shine-studio-xgAeml2S7yU-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\1a8a139d-5029-4da9-b645-7bf660657acc_shine-studio-xgAeml2S7yU-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\41794e4f-cf6b-40a2-acc6-7be7299905fe_allison-griffith-VCXk_bO97VQ-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\41794e4f-cf6b-40a2-acc6-7be7299905fe_allison-griffith-VCXk_bO97VQ-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\8238e69e-b178-4499-a6d7-f47b90febfd5_loes-klinker-MLDLPO3DysE-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\8238e69e-b178-4499-a6d7-f47b90febfd5_loes-klinker-MLDLPO3DysE-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\8bb129ff-c1cf-490f-9125-da671f0ac768_jennifer-schmidt-gHm50qaMaXc-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\8bb129ff-c1cf-490f-9125-da671f0ac768_jennifer-schmidt-gHm50qaMaXc-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\9cb58293-b851-4381-b704-e687cd4428ad_faisal-khalid-HCdy6YL7ZqA-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\9cb58293-b851-4381-b704-e687cd4428ad_faisal-khalid-HCdy6YL7ZqA-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\b923ebaf-a4a2-4d96-9973-da7209311b77_jay-gajjar-lGIXXpeERSM-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\b923ebaf-a4a2-4d96-9973-da7209311b77_jay-gajjar-lGIXXpeERSM-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\c2594487-7807-4167-beb1-c0cf0d504e34_taylor-kiser-EvoIiaIVRzU-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\c2594487-7807-4167-beb1-c0cf0d504e34_taylor-kiser-EvoIiaIVRzU-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\c7ef68da-04d5-449c-810c-d3352b8b6344_frames-for-your-heart-J5eOPeFqcuY-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\c7ef68da-04d5-449c-810c-d3352b8b6344_frames-for-your-heart-J5eOPeFqcuY-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\c9404887-d25f-48f9-8d06-809fdbd11ac8_victoria-aleksandrova-n56ZKeW9bVM-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\c9404887-d25f-48f9-8d06-809fdbd11ac8_victoria-aleksandrova-n56ZKeW9bVM-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\cf691988-5111-4b5f-9053-fc06a7249cc2_mohammad-amin-masoudi-X6wi4AV4jJE-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\cf691988-5111-4b5f-9053-fc06a7249cc2_mohammad-amin-masoudi-X6wi4AV4jJE-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\ee58c69d-0a30-43b0-a89b-951033b7b364_drake-whitney-pWqMo3bhv3A-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\ee58c69d-0a30-43b0-a89b-951033b7b364_drake-whitney-pWqMo3bhv3A-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\f18cc8eb-3d55-43e6-bd98-1630987e7f0b_yeoul-shin-Byh_SNzWnI4-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\f18cc8eb-3d55-43e6-bd98-1630987e7f0b_yeoul-shin-Byh_SNzWnI4-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestaurantApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestaurantApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.RestaurantApp.props",
+      "PackagePath": "build\\RestaurantApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.RestaurantApp.props",
+      "PackagePath": "buildMultiTargeting\\RestaurantApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.RestaurantApp.props",
+      "PackagePath": "buildTransitive\\RestaurantApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
