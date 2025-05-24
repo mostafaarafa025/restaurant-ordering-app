@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using RestaurantApp.Models;
+using RestaurantApp.Areas.Admin.Models;
 
 namespace RestaurantApp.Data
 {

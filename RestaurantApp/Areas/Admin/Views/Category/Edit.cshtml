@@ -1,0 +1,50 @@
+﻿@using RestaurantApp.Areas.Admin.Models
+@model CategoryViewModel
+@{
+    ViewBag.Title = "Edit Category";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-orange">Edit Category</h2>
+
+    <form method="post" enctype="multipart/form-data" class="bg-light-orange p-4 rounded shadow-sm">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ExistingImagePath" />
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label fw-bold"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label fw-bold"></label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Current Image</label><br />
+            <img src="@Model.ExistingImagePath" alt="Category Image" class="img-thumbnail" style="max-height:200px;" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ImageFile" class="form-label fw-bold"></label>
+            <input asp-for="ImageFile" class="form-control" type="file" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-success">Save Changes</button>
+            <a asp-action="delete" asp-controller="category" asp-route-id="@Model.Id"
+               onclick="return confirm('Are you sure?')" class="btn btn-danger">Delete Category</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+}

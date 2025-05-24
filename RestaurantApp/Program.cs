@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RestaurantApp.Areas.Admin.Repositories;
 using RestaurantApp.Data;
-using RestaurantApp.Repositories;
 
 namespace RestaurantApp
 {
@@ -41,13 +41,18 @@ namespace RestaurantApp
 
             app.UseAuthorization();
 
-            app.MapStaticAssets();
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}")
-                .WithStaticAssets();
-            app.MapRazorPages()
-               .WithStaticAssets();
+            
+                app.MapControllerRoute(
+         name: "areas",
+         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+
+                app.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.MapRazorPages();
+               
 
             app.Run();
         }

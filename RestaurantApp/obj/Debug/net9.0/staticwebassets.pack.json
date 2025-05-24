@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\images\\items\\41794e4f-cf6b-40a2-acc6-7be7299905fe_allison-griffith-VCXk_bO97VQ-unsplash.jpg"
     },
     {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\45001337-9f01-4f87-8bff-af1b989b4e47_vicky-nguyen-a4xoMVKzbak-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\45001337-9f01-4f87-8bff-af1b989b4e47_vicky-nguyen-a4xoMVKzbak-unsplash.jpg"
+    },
+    {
       "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\8238e69e-b178-4499-a6d7-f47b90febfd5_loes-klinker-MLDLPO3DysE-unsplash.jpg",
       "PackagePath": "staticwebassets\\images\\items\\8238e69e-b178-4499-a6d7-f47b90febfd5_loes-klinker-MLDLPO3DysE-unsplash.jpg"
     },
@@ -69,12 +73,20 @@
       "PackagePath": "staticwebassets\\images\\items\\8bb129ff-c1cf-490f-9125-da671f0ac768_jennifer-schmidt-gHm50qaMaXc-unsplash.jpg"
     },
     {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\93c01f3c-4a50-472a-96a5-98f5eaadaccc_nguyen-dang-hoang-nhu-fLFosDcrm28-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\93c01f3c-4a50-472a-96a5-98f5eaadaccc_nguyen-dang-hoang-nhu-fLFosDcrm28-unsplash.jpg"
+    },
+    {
       "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\9cb58293-b851-4381-b704-e687cd4428ad_faisal-khalid-HCdy6YL7ZqA-unsplash.jpg",
       "PackagePath": "staticwebassets\\images\\items\\9cb58293-b851-4381-b704-e687cd4428ad_faisal-khalid-HCdy6YL7ZqA-unsplash.jpg"
     },
     {
       "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg",
       "PackagePath": "staticwebassets\\images\\items\\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\items\\ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.jpg"
     },
     {
       "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\b923ebaf-a4a2-4d96-9973-da7209311b77_jay-gajjar-lGIXXpeERSM-unsplash.jpg",
@@ -103,6 +115,10 @@
     {
       "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\f18cc8eb-3d55-43e6-bd98-1630987e7f0b_yeoul-shin-Byh_SNzWnI4-unsplash.jpg",
       "PackagePath": "staticwebassets\\images\\items\\f18cc8eb-3d55-43e6-bd98-1630987e7f0b_yeoul-shin-Byh_SNzWnI4-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\testimages\\danaus-mx-Pk7KFLpD9G4-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\testimages\\danaus-mx-Pk7KFLpD9G4-unsplash.jpg"
     },
     {
       "Id": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\js\\site.js",
