@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestaurantApp.Areas.Admin.Models;
@@ -8,6 +9,7 @@ using RestaurantApp.Data;
 namespace RestaurantApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    
     public class CategoryController : Controller
     {
         //RestaurantDbContext context;

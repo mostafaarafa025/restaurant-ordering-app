@@ -1,7 +1,8 @@
-﻿@{
+﻿@using RestaurantApp.Areas.Admin.Models
+@{
     ViewData["Title"] = "Home Page";
 }
-
+@model IEnumerable<Item>
 
 <!-- Hero Section -->
 <div class="jumbotron jumbotron-fluid bg-dark text-white mt-1 mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/testimages/danaus-mx-Pk7KFLpD9G4-unsplash.jpg'); background-size: cover; background-position: center; height: 450px;">
@@ -16,31 +17,30 @@
 
 <!-- Main Content -->
 <div class="container py-5">
- 
-    <section class="mb-0">
+    <section class="mb-5">
         <div class="row">
-            <div class="col-md-4 mb-2">
-                <div class="card h-150 shadow-sm text-center p-4">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm text-center p-4">
                     <div class="text-orange mb-3">
-                        <i class="fas fa-bolt fa-3x"></i> 
+                        <i class="fas fa-bolt fa-3x"></i>
                     </div>
                     <h3 class="text-orange">Fast Delivery</h3>
                     <p class="text-muted">Get your favorite meals delivered to your doorstep in under 30 minutes.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-2">
-                <div class="card h-150 shadow-sm text-center p-4">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm text-center p-4">
                     <div class="text-orange mb-3">
-                        <i class="fas fa-mobile-alt fa-3x"></i>  
+                        <i class="fas fa-mobile-alt fa-3x"></i>
                     </div>
                     <h3 class="text-orange">Easy Ordering</h3>
                     <p class="text-muted">Simple, intuitive app interface makes ordering food quick and hassle-free.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-2">
-                <div class="card h-150 shadow-sm text-center p-4">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm text-center p-4">
                     <div class="text-orange mb-3">
-                        <i class="fas fa-credit-card fa-3x"></i>  
+                        <i class="fas fa-credit-card fa-3x"></i>
                     </div>
                     <h3 class="text-orange">Multiple Payments</h3>
                     <p class="text-muted">Pay with credit card, mobile wallet, or cash on delivery - your choice!</p>
@@ -48,41 +48,49 @@
             </div>
         </div>
     </section>
-</div>
 
     <!-- Specials Section -->
-    <section class="py-5 bg-white rounded shadow-sm">
-        <h2 class="text-center text-orange mb-5">Today's Specials</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="bg-secondary" style="height: 200px;"></div>
-                    <div class="card-body">
-                        <h3 class="card-title text-orange">Grilled Salmon</h3>
-                        <p class="card-text font-weight-bold text-orange mb-2">$24.99</p>
-                        <p class="card-text">Fresh Atlantic salmon grilled to perfection, served with asparagus and lemon butter sauce.</p>
+    <section class="py-5 bg-light rounded shadow-sm">
+        <div class="container">
+            <h2 class="text-center text-orange mb-5">Today's Specials</h2>
+            <div class="row">
+                @if (Model == null || !Model.Any())
+                {
+                    <div class="col-12">
+                        <div class="text-center py-5">
+                            <i class="fas fa-utensils fa-3x text-muted mb-3"></i>
+                            <p class="text-muted">No special items selected for today.</p>
+                            <p class="text-muted">Check back later for our delicious daily specials!</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="bg-secondary" style="height: 200px;"></div>
-                    <div class="card-body">
-                        <h3 class="card-title text-orange">Truffle Risotto</h3>
-                        <p class="card-text font-weight-bold text-orange mb-2">$19.99</p>
-                        <p class="card-text">Creamy Arborio rice cooked with wild mushrooms and finished with truffle oil and parmesan.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="bg-secondary" style="height: 200px;"></div>
-                    <div class="card-body">
-                        <h3 class="card-title text-orange">Beef Tenderloin</h3>
-                        <p class="card-text font-weight-bold text-orange mb-2">$29.99</p>
-                        <p class="card-text">Premium aged beef tenderloin, cooked to your preference, with red wine reduction.</p>
-                    </div>
-                </div>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-img-top" style="height: 200px; background-image: url('@item.ImagePath'); background-size: cover; background-position: center; background-color: #f8f9fa;">
+                                    @if (string.IsNullOrEmpty(item.ImagePath))
+                                    {
+                                        <div class="d-flex align-items-center justify-content-center h-100 bg-light">
+                                            <i class="fas fa-image fa-3x text-muted"></i>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-orange">@item.Name</h5>
+                                    <p class="card-text font-weight-bold text-orange mb-2">$@item.Price.ToString("F2")</p>
+                                    <p class="card-text flex-grow-1">@item.Description</p>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-orange btn-sm">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
             </div>
         </div>
     </section>
+</div>

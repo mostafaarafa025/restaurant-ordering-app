@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4+geaFSRDh7/Rl08V9wNqSxs9dexK16m7++LJWbnse4=",
+  "Hash": "2v5zMIr4ADXQQNnjkKXeFr+k16CorkXIoaedCFTA/6Y=",
   "Source": "RestaurantApp",
   "BasePath": "_content/RestaurantApp",
   "Mode": "Default",
@@ -4446,6 +4446,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\items\\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg"
+    },
+    {
+      "Identity": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "SourceId": "RestaurantApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\",
+      "BasePath": "_content/RestaurantApp",
+      "RelativePath": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xdjmjal79n",
+      "Integrity": "W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\items\\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png"
     },
     {
       "Identity": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.jpg",
@@ -16593,6 +16614,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Wi6SKrvYgr5pCsgkrwNJ05K5jWb0duFjCLwmJ7iTZNQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "AssetFile": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 06:23:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec="
+        }
+      ]
+    },
+    {
+      "Route": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.xdjmjal79n.png",
+      "AssetFile": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\wwwroot\\images\\items\\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 06:23:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xdjmjal79n"
+        },
+        {
+          "Name": "label",
+          "Value": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec="
         }
       ]
     },

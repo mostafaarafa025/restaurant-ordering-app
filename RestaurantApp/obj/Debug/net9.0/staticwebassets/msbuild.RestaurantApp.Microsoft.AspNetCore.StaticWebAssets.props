@@ -360,6 +360,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\items\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\items\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaurantApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaurantApp</BasePath>
+      <RelativePath>images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xdjmjal79n</Fingerprint>
+      <Integrity>W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\items\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\items\ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>RestaurantApp</SourceId>

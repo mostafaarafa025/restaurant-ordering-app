@@ -3,34 +3,138 @@
 @{
     ViewBag.Title = "Items";
 }
+
+<style>
+    .special-buttons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 10;
+    }
+
+    .btn-special {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        backdrop-filter: blur(10px);
+    }
+
+    .btn-add-special {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+
+        .btn-add-special:hover {
+            background: linear-gradient(135deg, #218838, #1ea97c);
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+        }
+
+    .btn-remove-special {
+        background: linear-gradient(135deg, #dc3545, #fd7e14);
+        color: white;
+    }
+
+        .btn-remove-special:hover {
+            background: linear-gradient(135deg, #c82333, #e8650e);
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+        }
+
+    .card-image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .card-image-container:hover .special-buttons {
+            opacity: 1;
+        }
+
+    .special-buttons {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .btn-special:active {
+        transform: scale(0.95);
+    }
+</style>
+
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2 class="text-orange">Items</h2>
-        <a asp-action="Create" asp-controller="Item" class="btn btn-orange">Create New</a>
-    </div>
-<hr />
-<div class="row">
-@foreach (var category in ViewBag.categories)
-{
-    <div class="container mb-5">
-        <h2 class="mb-3 text-orange">@category.Name</h2>
-        <div class="row">
-            @foreach (var item in Model.Where(i => i.CategoryId == category.Id))
-            {
-                <div class="col-md-4 d-flex align-items-stretch mb-4">
-                    <div class="card w-100 shadow-sm">
-                        <img src="@item.ImagePath" class="card-img-top" alt="..." style="height: 250px; object-fit: cover;">
-                        <button asp-action="addtoSpecials" asp-controller="item">+</button>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">@item.Name</h5>
-                            <p class="card-text flex-grow-1">@item.Description</p>
-                                    <a asp-action="Edit" asp-route-id="@item.Id" asp-controller="Item" class="btn btn-orange mt-auto">Edit</a>
-                        </div>
-                    </div>
-                </div>
-            }
+        <div class="d-flex align-items-center gap-3">
+            <span class="badge bg-info">Today's Specials: @(Model.Count(i => i.IsTodaySpecial))/3</span>
+            <a asp-action="Create" asp-controller="Item" class="btn btn-orange">Create New</a>
         </div>
     </div>
-}
-  
 
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    <hr />
+    <div class="row">
+        @foreach (var category in ViewBag.categories)
+        {
+            <div class="container mb-5">
+                <h2 class="mb-3 text-orange">@category.Name</h2>
+                <div class="row">
+                    @foreach (var item in Model.Where(i => i.CategoryId == category.Id))
+                    {
+                        <div class="col-md-4 d-flex align-items-stretch mb-4">
+                            <div class="card w-100 shadow-sm">
+                                <div class="card-image-container">
+                                    <img src="@item.ImagePath" class="card-img-top" alt="@item.Name" style="height: 250px; object-fit: cover;">
+                                    <div class="special-buttons">
+                                        <form asp-action="AddToSpecials" asp-controller="Item" asp-route-id="@item.Id" method="post" class="mb-1">
+                                            <button type="submit" class="btn btn-special btn-add-special">
+                                                <i class="fas fa-star"></i>
+                                            </button>
+                                        </form>
+                                        <form asp-action="RemoveFromSpecials" asp-controller="Item" asp-route-id="@item.Id" method="post">
+                                            <button type="submit" class="btn btn-special btn-remove-special">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <p class="card-text flex-grow-1">@item.Description</p>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" asp-controller="Item" class="btn btn-orange mt-auto">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Font Awesome for icons (add this to your layout if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

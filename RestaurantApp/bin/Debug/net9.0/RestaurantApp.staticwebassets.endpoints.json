@@ -10904,6 +10904,88 @@
       ]
     },
     {
+      "Route": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "AssetFile": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 06:23:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec="
+        }
+      ]
+    },
+    {
+      "Route": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.xdjmjal79n.png",
+      "AssetFile": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 06:23:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xdjmjal79n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4mZW5BmfoPZTSpvXPWdJzi7+5HpM3stTNrBZO6xpec="
+        },
+        {
+          "Name": "label",
+          "Value": "images/items/a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png"
+        }
+      ]
+    },
+    {
       "Route": "images/items/ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.31emvkhvp8.jpg",
       "AssetFile": "images/items/ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.jpg",
       "Selectors": [],

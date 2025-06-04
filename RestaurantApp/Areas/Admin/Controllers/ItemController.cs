@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RestaurantApp.Areas.Admin.Models;
 using RestaurantApp.Areas.Admin.Repositories;
 using RestaurantApp.Data;
@@ -9,6 +11,7 @@ using SixLabors.ImageSharp.Processing;
 namespace RestaurantApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+   
     public class ItemController : Controller
     {
         // RestaurantDbContext context;
@@ -173,5 +176,52 @@ namespace RestaurantApp.Areas.Admin.Controllers
             ItemRepo.Delete(model);
             return RedirectToAction("index");
         }
+
+        [HttpPost] 
+        public IActionResult AddToSpecials(int? id) 
+        {
+            if (id == null) return NotFound();
+
+            var item = ItemRepo.getById(id.Value);
+            if (item == null) return NotFound();
+
+            if (item.IsTodaySpecial)
+            {
+                TempData["Error"] = $"{item.Name} is already in today's specials.";
+                return RedirectToAction("Index");
+            }
+
+            var count = ItemRepo.GetItems().Where(i => i.IsTodaySpecial).Count();
+            if (count >= 3)
+            {
+                TempData["Error"] = "Only 3 items can be marked as today's special.";
+                return RedirectToAction("Index");
+            }
+
+            item.IsTodaySpecial = true;
+            ItemRepo.saveChanges();
+            TempData["Success"] = $"{item.Name} added to today's specials successfully!";
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult RemoveFromSpecials(int? id) 
+        {
+            if (id == null) return NotFound();
+
+            var item = ItemRepo.getById(id.Value);
+            if (item == null) return NotFound();
+            if(item.IsTodaySpecial==false)
+               { TempData["Error"] = $"{item.Name}  isn't in today's specials.!"; }
+            else
+            {
+                item.IsTodaySpecial = false;
+                ItemRepo.saveChanges();
+                TempData["Success"] = $"{item.Name} removed from today's specials successfully!";
+            }
+         
+            return RedirectToAction("Index");
+        }
+
     }
 }

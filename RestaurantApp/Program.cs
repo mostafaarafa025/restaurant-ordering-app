@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RestaurantApp.Areas.Admin.Repositories;
@@ -20,8 +21,34 @@ namespace RestaurantApp
             builder.Services.AddScoped<IItemRepository , ItemRepository>();
             builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false)
              .AddRoles<AppRole>().AddEntityFrameworkStores<RestaurantDbContext>();
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/admin/Account/Login";
+        options.AccessDeniedPath = "/Admin/Account/AccessDenied";
 
+    });
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.Events.OnRedirectToLogin = context =>
+                {
+                    var request = context.Request;
+
+                    if (request.Path.StartsWithSegments("/Admin", StringComparison.OrdinalIgnoreCase))
+                    {
+                        context.Response.Redirect("/Admin/Account/Login?ReturnUrl=" + Uri.EscapeDataString(request.Path + request.QueryString));
+                    }
+                    else
+                    {
+                        context.Response.Redirect("Identity/Account/Login?ReturnUrl=" + Uri.EscapeDataString(request.Path + request.QueryString));
+                    }
+
+                    return Task.CompletedTask;
+                };
+            });
+
+            builder.Services.AddControllersWithViews();
+        
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -38,7 +65,7 @@ namespace RestaurantApp
             app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             

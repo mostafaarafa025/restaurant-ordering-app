@@ -10,6 +10,7 @@ namespace RestaurantApp.Areas.Admin.Repositories
         void Update(Item item);
         void Delete(Item item);
         Item getById(int id);
+        void saveChanges();
     }
 
     public class ItemRepository : IItemRepository
@@ -41,10 +42,16 @@ namespace RestaurantApp.Areas.Admin.Repositories
             return context.Items.ToList();
         }
 
+        public void saveChanges()
+        {
+            context.SaveChanges();
+        }
+
         public void Update(Item item)
         {
             context.Update(item);
             context.SaveChanges();
         }
+
     }
 }

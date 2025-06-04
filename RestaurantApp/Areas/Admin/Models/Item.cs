@@ -21,6 +21,8 @@ namespace RestaurantApp.Areas.Admin.Models
         public int Calories { get; set; }
         [Required]
         public List<string> Ingredients { get; set; }
+        
+        public bool IsTodaySpecial { get; set; } = false;
 
         [ForeignKey("Category")]
         [Required]

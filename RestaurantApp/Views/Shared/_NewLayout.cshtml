@@ -51,22 +51,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" asp-action="index" asp-controller="home">Home</a>
+                            <a class="nav-link" asp-action="index" asp-area="" asp-controller="home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" asp-action="index" asp-area="" asp-controller="Menu">Menu</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="AboutUs" asp-area="" asp-controller="home">About us</a>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-action="index" asp-controller="item">items</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-action="index" asp-controller="category">categories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" asp-action="Contact" asp-area="" asp-controller="home">Contact</a>
+
                         </li>
                     </ul>
                     <partial name="_LoginPartial" /> 

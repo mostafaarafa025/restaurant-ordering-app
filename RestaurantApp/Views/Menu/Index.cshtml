@@ -1,0 +1,383 @@
+﻿@{
+    ViewData["Title"] = "Menu";
+}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        min-height: 100vh;
+        
+    }
+
+    .menu-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .search-container {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .search-box {
+        width: 100%;
+        padding: 18px 60px 18px 20px;
+        border: 2px solid #f0f0f0;
+        border-radius: 50px;
+        font-size: 16px;
+        background: #f8f9fa;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+
+        .search-box:focus {
+            border-color: #ff6b35;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+    .search-icon {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-size: 18px;
+    }
+
+    .categories {
+        margin-bottom: 40px;
+    }
+
+        .categories h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+    .category-pills {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .category-pill {
+        padding: 12px 24px;
+        border: 2px solid #e9ecef;
+        border-radius: 50px;
+        background: white;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+        .category-pill.active {
+            background: #ff6b35;
+            color: white;
+            border-color: #ff6b35;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .category-pill:hover:not(.active) {
+            border-color: #ff6b35;
+            transform: translateY(-1px);
+        }
+
+    .menu-section {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+    }
+
+    .menu-item {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border-color: #ff6b35;
+        }
+
+    .item-image {
+        width: 100%;
+        height: 230px;
+        background: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .item-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #ff6b35, #ffa500);
+            opacity: 0.1;
+        }
+
+    .placeholder-image {
+        width: 120px;
+        height: 80px;
+        background: #ddd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+    }
+
+    .item-content {
+        padding: 25px;
+    }
+
+    .item-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .item-category {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .item-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .item-price {
+        font-size: 22px;
+        font-weight: 700;
+        color: #ff6b35;
+    }
+
+    .add-btn {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #ff6b35;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .add-btn:hover {
+            background: #e5602f;
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .add-btn:active {
+            transform: scale(0.95);
+        }
+
+    .cart-indicator {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: #ff6b35;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+        .cart-indicator:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.6);
+        }
+
+    .cart-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: #dc3545;
+        color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+</style>
+<div class="menu-container">
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search for your favorite food...">
+        <i class="fas fa-search search-icon"></i>
+    </div>
+    <div class="categories">
+        <h2>Categories</h2>
+        <div class="category-pills">
+            <div class="category-pill" data-category="all">All</div>
+            @foreach(var item in ViewBag.Categories){
+                <div class="category-pill" data-category=@item.Id>@item.Name</div>
+            }
+        </div>
+    </div>
+    <div class="menu-section">
+
+        <div class="menu-grid">
+            @foreach (var item in ViewBag.items)
+            {
+                <div class="menu-item" data-category="@item.CategoryId">
+                    <div class="item-image">
+                        <div class="placeholder-image">
+                            <img src="@item.ImagePath" />
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">@item.Name</h3>
+                      
+                        <div class="item-footer">
+                            <span class="item-price">$@item.Price</span>
+                            <button class="add-btn" onclick="addToCart()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+    </div>
+
+</div>
+<div class="cart-indicator" onclick="openCart()">
+    <i class="fas fa-shopping-cart"></i>
+    <div class="cart-count"></div>
+</div>
+<script>
+    let cartCount = 0;
+
+    // Category filtering
+    document.querySelectorAll('.category-pill').forEach(pill => {
+        pill.addEventListener('click', function() {
+            // Remove active class from all pills
+            document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+
+            // Add active class to clicked pill
+            this.classList.add('active');
+
+            const category = this.dataset.category;
+            filterMenuItems(category);
+        });
+    });
+
+    function filterMenuItems(category) {
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuItems.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.display = 'none';
+                }, 300);
+            }
+        });
+    }
+
+    function addToCart() {
+        cartCount++;
+        const cartCountElement = document.querySelector('.cart-count');
+        cartCountElement.textContent = cartCount;
+
+        // Add animation to cart
+        const cartIndicator = document.querySelector('.cart-indicator');
+        cartIndicator.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+            cartIndicator.style.transform = 'scale(1)';
+        }, 200);
+    }
+
+    function openCart() {
+        alert('Cart opened! Items: ' + cartCount);
+    }
+
+    // Search functionality
+    const searchBox = document.querySelector('.search-box');
+    searchBox.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuItems.forEach(item => {
+            const title = item.querySelector('.item-title').textContent.toLowerCase();
+            const category = item.querySelector('.item-category').textContent.toLowerCase();
+
+            if (title.includes(searchTerm) || category.includes(searchTerm)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+</script>

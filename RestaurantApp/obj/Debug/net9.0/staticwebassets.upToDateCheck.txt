@@ -80,6 +80,7 @@ wwwroot\images\items\8bb129ff-c1cf-490f-9125-da671f0ac768_jennifer-schmidt-gHm50
 wwwroot\images\items\93c01f3c-4a50-472a-96a5-98f5eaadaccc_nguyen-dang-hoang-nhu-fLFosDcrm28-unsplash.jpg
 wwwroot\images\items\9cb58293-b851-4381-b704-e687cd4428ad_faisal-khalid-HCdy6YL7ZqA-unsplash.jpg
 wwwroot\images\items\a0bfe78a-f30f-436e-8c3b-035d66d57895_luigi-boccardo-wgq8NVyXsYY-unsplash.jpg
+wwwroot\images\items\a1a7d91e-7be7-4d94-b5c7-afee68cfbb39_Screenshot 2025-04-29 165637.png
 wwwroot\images\items\ab2b38f8-93a6-4bea-a241-9ec3469d20f6_razvan-mirel-ZmD_J-phokw-unsplash.jpg
 wwwroot\images\items\b923ebaf-a4a2-4d96-9973-da7209311b77_jay-gajjar-lGIXXpeERSM-unsplash.jpg
 wwwroot\images\items\c2594487-7807-4167-beb1-c0cf0d504e34_taylor-kiser-EvoIiaIVRzU-unsplash.jpg
