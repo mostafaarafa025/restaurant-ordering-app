@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Menu";
 }
-<style>
+<style> 
     * {
         margin: 0;
         padding: 0;
@@ -263,6 +263,9 @@
     }
 </style>
 <div class="menu-container">
+    <div id="loading-spinner" style="display: none; text-align:center; margin: 20px 0;">
+        <i class="fas fa-spinner fa-spin" style="font-size: 24px; color: #ff6b35;"></i>
+    </div>
     <div class="search-container">
         <input type="text" class="search-box" placeholder="Search for your favorite food...">
         <i class="fas fa-search search-icon"></i>
@@ -312,13 +315,10 @@
 <script>
     let cartCount = 0;
 
-    // Category filtering
     document.querySelectorAll('.category-pill').forEach(pill => {
         pill.addEventListener('click', function() {
-            // Remove active class from all pills
             document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
 
-            // Add active class to clicked pill
             this.classList.add('active');
 
             const category = this.dataset.category;
@@ -326,32 +326,39 @@
         });
     });
 
-    function filterMenuItems(category) {
+        function filterMenuItems(category) {
         const menuItems = document.querySelectorAll('.menu-item');
+        const spinner = document.getElementById('loading-spinner');
+        spinner.style.display = 'block';
 
-        menuItems.forEach(item => {
-            if (category === 'all' || item.dataset.category === category) {
-                item.style.display = 'block';
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                }, 100);
-            } else {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    item.style.display = 'none';
-                }, 300);
-            }
-        });
+     
+        setTimeout(() => {
+            menuItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 500);
+                }
+            });
+
+            spinner.style.display = 'none';
+        }, 300); 
     }
+
 
     function addToCart() {
         cartCount++;
         const cartCountElement = document.querySelector('.cart-count');
         cartCountElement.textContent = cartCount;
 
-        // Add animation to cart
         const cartIndicator = document.querySelector('.cart-indicator');
         cartIndicator.style.transform = 'scale(1.2)';
         setTimeout(() => {
@@ -363,7 +370,6 @@
         alert('Cart opened! Items: ' + cartCount);
     }
 
-    // Search functionality
     const searchBox = document.querySelector('.search-box');
     searchBox.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();

@@ -17,8 +17,10 @@ namespace RestaurantApp
             builder.Services.AddDbContext<RestaurantDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
             builder.Services.AddScoped<ICategoryRepository , CategoryRepository>();
             builder.Services.AddScoped<IItemRepository , ItemRepository>();
+
             builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false)
              .AddRoles<AppRole>().AddEntityFrameworkStores<RestaurantDbContext>();
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

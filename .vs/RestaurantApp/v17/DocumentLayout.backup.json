@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\ITI\\mvc\\RestaurantApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|d:\\iti\\mvc\\restaurantapp\\restaurantapp\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|d:\\iti\\mvc\\restaurantapp\\restaurantapp\\areas\\admin\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\areas\\admin\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F8C4587-4428-4C1D-947E-CE240DCDD60E}|Solution Items{6F8C4587-4428-4C1D-947E-CE240DCDD60E}|D:\\ITI\\mvc\\RestaurantApp\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6F8C4587-4428-4C1D-947E-CE240DCDD60E}|Solution Items{6F8C4587-4428-4C1D-947E-CE240DCDD60E}|solutionrelative:.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|d:\\iti\\mvc\\restaurantapp\\restaurantapp\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|d:\\iti\\mvc\\restaurantapp\\restaurantapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1859C383-420E-46A8-AA29-A2C92CD06699}|RestaurantApp\\RestaurantApp.csproj|solutionrelative:restaurantapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Areas\\Admin\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "RestaurantApp\\Areas\\Admin\\Controllers\\ItemController.cs",
-              "ToolTip": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Areas\\Admin\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "RestaurantApp\\Areas\\Admin\\Controllers\\ItemController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:54:18.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Views\\Menu\\Index.cshtml",
-              "RelativeDocumentMoniker": "RestaurantApp\\Views\\Menu\\Index.cshtml",
-              "ToolTip": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Views\\Menu\\Index.cshtml",
-              "RelativeToolTip": "RestaurantApp\\Views\\Menu\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABABAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T19:19:57.594Z",
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\ITI\\mvc\\RestaurantApp\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\ITI\\mvc\\RestaurantApp\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-23T02:45:26.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantApp\\Program.cs",
+              "ToolTip": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Program.cs",
+              "RelativeToolTip": "RestaurantApp\\Program.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:37:05.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MenuController.cs",
               "DocumentMoniker": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Controllers\\MenuController.cs",
               "RelativeDocumentMoniker": "RestaurantApp\\Controllers\\MenuController.cs",
               "ToolTip": "D:\\ITI\\mvc\\RestaurantApp\\RestaurantApp\\Controllers\\MenuController.cs",
               "RelativeToolTip": "RestaurantApp\\Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAArwA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:19:47.247Z",
+              "WhenOpened": "2025-06-23T02:20:20.868Z",
               "EditorCaption": ""
             }
           ]
